@@ -17,9 +17,6 @@
     //The nav bar links related to the last entries in the fileNames/pageNames arrays will be floated to the right. numPagesFloatRight controls how many of them will be floated to the right.
     var numPagesFloatRight = 1;
     
-    //Stores the ID of the active link for use in other JavaScript.
-    var linkId = "";
-    
     //generateLinks() must come before selectActive() because if they are the other way around, the code will attempt to make a link active before it's there, which may lead to errors.
     generateLinks();
     selectActive();
@@ -53,7 +50,6 @@
         for (var i = 0; i < fileNames.length; i++) {
             if (fileName == fileNames[i]) {
                 document.getElementById("link" + i).classList.add("active");
-                linkId = "link" + i;
             }
         }
     }
