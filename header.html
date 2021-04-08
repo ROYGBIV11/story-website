@@ -20,6 +20,7 @@
     //generateLinks() must come before selectActive() because if they are the other way around, the code will attempt to make a link active before it's there, which may lead to errors.
     generateLinks();
     selectActive();
+    startHover();
     
     //Generates an unordered list of links that lead to the most relevant (i.e. all) pages of the website. These links are the contents of the navigation bar.
     function generateLinks () {
